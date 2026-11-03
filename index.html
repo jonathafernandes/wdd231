@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Página inicial de Jonatha Fernandes para o curso WDD 231, com apresentação pessoal e cursos do certificado de desenvolvimento web.">
+  <meta name="author" content="Jonatha Fernandes">
+  <title>Jonatha Fernandes | WDD 231</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Rubik:wght@300;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="estilos/normalize.css">
+  <link rel="stylesheet" href="estilos/telas-pequenas.css">
+  <link rel="stylesheet" href="estilos/telas-grandes.css">
+  <script src="scripts/navegacao.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+  <script src="scripts/curso.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <header>
+    <div class="site-header">
+      <a class="brand" href="index.html" aria-label="Página inicial de Jonatha Fernandes">
+        <img src="imagens/logo-jf.svg" alt="" width="56" height="56">
+        <span>Jonatha Fernandes</span>
+      </a>
+      <button id="menu" class="menu-button" type="button" aria-label="Abrir menu de navegação"
+        aria-controls="navegacao-principal" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+
+    <nav id="navegacao-principal" class="navigation" aria-label="Navegação principal">
+      <ul>
+        <li><a class="active" href="index.html" aria-current="page">Página Inicial</a></li>
+        <li><a href="camara/diretorio.html">Projeto da Câmara</a></li>
+        <li><a href="final/index.html">Projeto Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo-principal">
+    <h1>Página Inicial</h1>
+
+    <div class="content-grid">
+      <section class="card about-card">
+        <h2>Sobre Mim</h2>
+        <div class="card-content">
+          <p>Sou Jonatha Fernandes, desenvolvedor web de Maceió, Alagoas. Trabalho com desenvolvimento de software e
+            gosto de transformar ideias em experiências digitais claras, acessíveis e eficientes.</p>
+          <p>Tenho experiência com JavaScript, TypeScript, React e Node.js. Neste curso, estou aprofundando práticas de
+            desenvolvimento frontend, usabilidade, desempenho e acessibilidade para a web.</p>
+        </div>
+      </section>
+
+      <section class="card photo-card">
+        <h2>Foto</h2>
+        <div class="card-content photo-wrapper">
+          <img src="imagens/jonatha-fernandes.webp" alt="Jonatha Fernandes" width="500" height="500" loading="lazy">
+        </div>
+      </section>
+
+      <section class="card courses-card">
+        <h2>Cursos de Certificação Web</h2>
+        <div class="card-content">
+          <div class="course-filters" role="group" aria-label="Filtrar cursos por área">
+            <button id="todos" type="button" data-filter="todos" class="active">Todos</button>
+            <button id="cse" type="button" data-filter="CSE">CSE</button>
+            <button id="wdd" type="button" data-filter="WDD">WDD</button>
+          </div>
+          <div id="cursos" class="course-list" aria-live="polite"></div>
+          <p id="total-creditos" class="credits" aria-live="polite"></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <nav class="social-links" aria-label="Redes sociais e portfólio">
+      <a href="https://www.linkedin.com/in/jonathafernandes-/" target="_blank" rel="noopener noreferrer"
+        aria-label="LinkedIn de Jonatha Fernandes">
+        <svg viewBox="0 0 448 512" aria-hidden="true">
+          <path
+            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+        </svg>
+      </a>
+      <a href="https://github.com/jonathafernandes" target="_blank" rel="noopener noreferrer"
+        aria-label="GitHub de Jonatha Fernandes">
+        <svg viewBox="0 0 448 512" aria-hidden="true">
+          <path
+            d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3z" />
+        </svg>
+      </a>
+      <a href="https://instagram.com/_jonathafernandes" target="_blank" rel="noopener noreferrer"
+        aria-label="Instagram de Jonatha Fernandes">
+        <svg viewBox="0 0 448 512" aria-hidden="true">
+          <path
+            d="M224 202.66A53.34 53.34 0 1 0 277.36 256 53.38 53.38 0 0 0 224 202.66zm124.71-41a54 54 0 0 0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31 6.43a54 54 0 0 0-30.41 30.41c-8.28 21-6.43 71.05-6.43 94.33S91 329.26 99.32 350.33a54 54 0 0 0 30.41 30.41c21 8.29 71 6.43 94.31 6.43s73.24 1.93 94.3-6.43a54 54 0 0 0 30.41-30.41c8.35-21 6.43-71.05 6.43-94.33s1.92-73.26-6.43-94.33zM224 338a82 82 0 1 1 82-82 81.9 81.9 0 0 1-82 82zm85.38-148.3a19.14 19.14 0 1 1 19.13-19.14 19.1 19.1 0 0 1-19.09 19.18zM400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-17.12 290c-1.29 25.63-7.14 48.34-25.85 67s-41.4 24.63-67 25.85c-26.41 1.49-105.59 1.49-132 0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61 0-132 1.29-25.63 7.07-48.34 25.85-67s41.47-24.56 67-25.78c26.41-1.49 105.59-1.49 132 0 25.63 1.29 48.33 7.15 67 25.85s24.63 41.42 25.85 67.05c1.49 26.32 1.49 105.44 0 131.88z" />
+        </svg>
+      </a>
+      <a href="https://x.com/_jonatha__" target="_blank" rel="noopener noreferrer"
+        aria-label="Perfil de Jonatha Fernandes no X">
+        <svg viewBox="0 0 448 512" aria-hidden="true">
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396h-95.6L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5 78.2-89.5h47.5zM323.3 367.6 153.4 142.9h-28.3l171.8 224.7h26.3z" />
+        </svg>
+      </a>
+    </nav>
+    <p>&copy; <span id="anoAtual"></span> - Jonatha Fernandes · Maceió, AL, Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+</body>
+
+</html>
