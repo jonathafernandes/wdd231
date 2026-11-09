@@ -18,7 +18,11 @@ function exibeUltimaModficicao() {
         minute: '2-digit'
     })
 
-    ultimaModificacao.innerHTML = dataFormatada
+    ultimaModificacao.textContent = dataFormatada
+
+    if (ultimaModificacao.tagName === 'TIME') {
+        ultimaModificacao.setAttribute('datetime', data.toISOString())
+    }
 }
 
 exibeAnoAtual()
