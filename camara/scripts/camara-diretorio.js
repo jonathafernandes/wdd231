@@ -4,7 +4,7 @@ const statusDiretoria = document.querySelector("#status-diretorio");
 const botoesVisualizacao = document.querySelector('.view-switcher');
 
 async function obterDadosMembros() {
-    const resposta = await fetch('../camara/data/membros.json');
+    const resposta = await fetch('./dados/membros.json');
     const dados = await resposta.json();
 
     exibirMembros(dados);
