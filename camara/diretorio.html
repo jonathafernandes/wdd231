@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça empresas e organizações demonstrativas do diretório da Câmara de Comércio de Maceió.">
+    <meta name="author" content="Jonatha Fernandes">
+    <meta name="theme-color" content="#f7f8fc">
+    <title>Diretório de Empresas | Câmara de Comércio de Maceió</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="../estilos/camara-pequenas.css">
+    <link rel="stylesheet" href="../estilos/camara-grandes.css">
+    <link rel="icon" href="../favicon.ico">
+    <script src="../scripts/camara-diretorio.js" defer></script>
+    <script src="../scripts/data.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+        <a class="brand" href="diretorio.html" aria-label="Câmara de Comércio de Maceió, início">
+            <img src="../imagens/logo-camara-comercio.svg" alt="Câmara de Comércio de Maceió" width="240" height="49">
+        </a>
+
+        <nav class="site-navigation" aria-label="Navegação principal">
+            <a class="course-link" href="../index.html">Página do curso</a>
+            <a class="current-link" href="diretorio.html" aria-current="page">Diretório</a>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="intro" aria-labelledby="page-title">
+            <p class="eyebrow">Conexões que movimentam a cidade</p>
+            <h1 id="page-title">Diretório de empresas</h1>
+            <p class="intro-copy">Encontre serviços, iniciativas e negócios que fazem parte da comunidade empresarial de
+                Maceió.</p>
+        </section>
+
+        <section class="directory" aria-labelledby="directory-title">
+            <div class="directory-heading">
+                <div>
+                    <p class="eyebrow">Comunidade local</p>
+                    <h2 id="directory-title">Conheça nossos membros</h2>
+                </div>
+
+                <div class="view-switcher" role="group" aria-label="Forma de exibição">
+                    <button type="button" data-view="grid" aria-pressed="true">
+                        <span aria-hidden="true">▦</span> Cartões
+                    </button>
+                    <button type="button" data-view="list" aria-pressed="false">
+                        <span aria-hidden="true">☷</span> Lista
+                    </button>
+                </div>
+            </div>
+
+            <p id="status-diretorio" class="visually-hidden" aria-live="polite"></p>
+            <div class="member-grid" id="lista-membros"></div>
+            <noscript>
+                <p>Ative o JavaScript para carregar o diretório de empresas.</p>
+            </noscript>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Jonatha Fernandes · Maceió, Alagoas</p>
+            <p class="footer-note">© <span id="anoAtual">2026</span> · Atualizado em <time id="ultimaModificacao"></time>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

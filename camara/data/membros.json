@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Maré Alta Café",
+    "category": "Alimentação",
+    "description": "Cafés especiais e encontros com sabor local.",
+    "address": "Pajuçara · Maceió, AL",
+    "phone": "+558200000001",
+    "website": "https://marealta.example.invalid",
+    "initials": "MA",
+    "logoClass": "brand-coral",
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "Farol Norte Digital",
+    "category": "Tecnologia",
+    "description": "Soluções digitais para negócios em crescimento.",
+    "address": "Jatiúca · Maceió, AL",
+    "phone": "+558200000002",
+    "website": "https://farolnorte.example.invalid",
+    "initials": "FN",
+    "logoClass": "brand-blue",
+    "membershipLevel": "silver"
+  },
+  {
+    "name": "Verde Cais Studio",
+    "category": "Bem-estar",
+    "description": "Atividades de movimento e cuidado para a comunidade.",
+    "address": "Ponta Verde · Maceió, AL",
+    "phone": "+558200000003",
+    "website": "https://verdecais.example.invalid",
+    "initials": "VC",
+    "logoClass": "brand-green",
+    "membershipLevel": "nonprofit"
+  },
+  {
+    "name": "Casa Amarela Arquitetura",
+    "category": "Arquitetura",
+    "description": "Projetos que valorizam espaços e histórias locais.",
+    "address": "Farol · Maceió, AL",
+    "phone": "+558200000004",
+    "website": "https://casaamarela.example.invalid",
+    "initials": "CA",
+    "logoClass": "brand-gold",
+    "membershipLevel": "silver"
+  },
+  {
+    "name": "Rota do Sol Consultoria",
+    "category": "Serviços profissionais",
+    "description": "Apoio estratégico para pequenas empresas.",
+    "address": "Jaraguá · Maceió, AL",
+    "phone": "+558200000005",
+    "website": "https://rotadosol.example.invalid",
+    "initials": "RS",
+    "logoClass": "brand-violet",
+    "membershipLevel": "gold"
+  },
+  {
+    "name": "Brisa Turismo Local",
+    "category": "Turismo",
+    "description": "Experiências para descobrir a cultura e a costa alagoana.",
+    "address": "Centro · Maceió, AL",
+    "phone": "+558200000006",
+    "website": "https://brisaturismo.example.invalid",
+    "initials": "BT",
+    "logoClass": "brand-teal",
+    "membershipLevel": "nonprofit"
+  },
+  {
+    "name": "Ponto de Encontro Coworking",
+    "category": "Espaços de trabalho",
+    "description": "Espaço compartilhado para profissionais e equipes locais.",
+    "address": "Ponta Verde · Maceió, AL",
+    "phone": "+558200000007",
+    "website": "https://pontoencontro.example.invalid",
+    "initials": "PE",
+    "logoClass": "brand-blue",
+    "membershipLevel": "silver"
+  }
+]
