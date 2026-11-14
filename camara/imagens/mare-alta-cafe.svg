@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title">
+  <title id="title">Maré Alta Café</title>
+  <rect width="320" height="180" rx="20" fill="#fff0ec"/>
+  <path d="M0 132c45-24 83 23 128 0s83 23 128 0 64 0 64 0v48H0z" fill="#d56f5b"/>
+  <circle cx="160" cy="75" r="42" fill="#a84938"/>
+  <text x="160" y="86" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#fff">MA</text>
+</svg>

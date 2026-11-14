@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title">
+  <title id="title">Ponto de Encontro Coworking</title>
+  <rect width="320" height="180" rx="20" fill="#eaf1ff"/>
+  <circle cx="115" cy="75" r="38" fill="#34538f"/>
+  <circle cx="205" cy="75" r="38" fill="#6f87b7"/>
+  <path d="M136 75h48" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M75 150c7-38 30-55 65-55h40c35 0 58 17 65 55" fill="none" stroke="#34538f" stroke-width="14" stroke-linecap="round"/>
+  <text x="160" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">PE</text>
+</svg>

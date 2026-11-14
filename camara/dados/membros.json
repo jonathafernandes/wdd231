@@ -6,6 +6,7 @@
     "address": "Pajuçara · Maceió, AL",
     "phone": "+558200000001",
     "website": "https://marealta.example.invalid",
+    "image": "mare-alta-cafe.svg",
     "initials": "MA",
     "logoClass": "brand-coral",
     "membershipLevel": "gold"
@@ -17,6 +18,7 @@
     "address": "Jatiúca · Maceió, AL",
     "phone": "+558200000002",
     "website": "https://farolnorte.example.invalid",
+    "image": "farol-norte-digital.svg",
     "initials": "FN",
     "logoClass": "brand-blue",
     "membershipLevel": "silver"
@@ -28,6 +30,7 @@
     "address": "Ponta Verde · Maceió, AL",
     "phone": "+558200000003",
     "website": "https://verdecais.example.invalid",
+    "image": "verde-cais-studio.svg",
     "initials": "VC",
     "logoClass": "brand-green",
     "membershipLevel": "nonprofit"
@@ -39,6 +42,7 @@
     "address": "Farol · Maceió, AL",
     "phone": "+558200000004",
     "website": "https://casaamarela.example.invalid",
+    "image": "casa-amarela-arquitetura.svg",
     "initials": "CA",
     "logoClass": "brand-gold",
     "membershipLevel": "silver"
@@ -50,6 +54,7 @@
     "address": "Jaraguá · Maceió, AL",
     "phone": "+558200000005",
     "website": "https://rotadosol.example.invalid",
+    "image": "rota-do-sol-consultoria.svg",
     "initials": "RS",
     "logoClass": "brand-violet",
     "membershipLevel": "gold"
@@ -61,6 +66,7 @@
     "address": "Centro · Maceió, AL",
     "phone": "+558200000006",
     "website": "https://brisaturismo.example.invalid",
+    "image": "brisa-turismo-local.svg",
     "initials": "BT",
     "logoClass": "brand-teal",
     "membershipLevel": "nonprofit"
@@ -72,6 +78,7 @@
     "address": "Ponta Verde · Maceió, AL",
     "phone": "+558200000007",
     "website": "https://pontoencontro.example.invalid",
+    "image": "ponto-de-encontro-coworking.svg",
     "initials": "PE",
     "logoClass": "brand-blue",
     "membershipLevel": "silver"

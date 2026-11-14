@@ -7,9 +7,25 @@
     gap: 2rem;
   }
 
+  .header-top {
+    width: auto;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
   .site-navigation {
+    display: flex;
+    width: auto;
+    margin-top: 0;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+  }
+
+  .site-navigation a {
+    width: auto;
   }
 
   .intro {
@@ -32,13 +48,13 @@
   }
 
   .member-card {
-    grid-template-columns: 3.75rem minmax(0, 1fr);
+    grid-template-columns: 5.5rem minmax(0, 1fr);
     gap: 1rem;
     padding: 1.25rem;
   }
 
-  .member-brand {
-    width: 3.75rem;
+  .member-logo {
+    width: 5.5rem;
   }
 
   .member-info h3 {
@@ -46,7 +62,7 @@
   }
 
   .member-grid.is-list .member-card {
-    grid-template-columns: 3.75rem minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     align-items: center;
     padding: 1rem 1.25rem;
   }
@@ -114,8 +130,8 @@
     padding: 1.5rem;
   }
 
-  .member-brand {
-    width: 3.25rem;
+  .member-logo {
+    width: 100%;
   }
 
   .member-info h3 {
@@ -127,7 +143,7 @@
   }
 
   .member-grid.is-list .member-card {
-    grid-template-columns: 3.75rem minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     min-height: 0;
   }
 }

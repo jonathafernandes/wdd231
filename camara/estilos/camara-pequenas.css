@@ -77,10 +77,17 @@ img {
 .site-header {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
   padding: 1rem max(1.25rem, calc((100% - var(--chamber-max-width)) / 2));
   border-bottom: 1px solid var(--chamber-border);
   background: var(--chamber-surface);
+}
+
+.header-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .brand {
@@ -96,10 +103,30 @@ img {
   height: auto;
 }
 
+.menu-button {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: none;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: var(--chamber-surface);
+  color: var(--chamber-ink);
+  cursor: pointer;
+  font-size: 1.35rem;
+}
+
 .site-navigation {
-  display: flex;
-  flex-wrap: wrap;
+  display: none;
+  flex-direction: column;
   gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+.site-navigation.open {
+  display: flex;
 }
 
 .site-navigation a {
@@ -113,6 +140,7 @@ img {
   font-weight: 700;
   text-decoration: none;
   transition: background-color 160ms ease, color 160ms ease;
+  width: 100%;
 }
 
 .site-navigation a:hover,
@@ -247,7 +275,7 @@ h2 {
 
 .member-card {
   display: grid;
-  grid-template-columns: 3.5rem minmax(0, 1fr);
+  grid-template-columns: 5.5rem minmax(0, 1fr);
   align-items: start;
   gap: 0.9rem;
   min-width: 0;
@@ -265,24 +293,12 @@ h2 {
   box-shadow: 0 12px 28px rgb(34 36 58 / 9%);
 }
 
-.member-brand {
-  display: grid;
-  width: 3.5rem;
-  aspect-ratio: 1;
-  place-items: center;
+.member-logo {
+  width: 5.5rem;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 0.75rem;
-  font-family: "Rubik", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
 }
-
-.brand-coral { color: #a84938; }
-.brand-blue { color: #34538f; }
-.brand-green { color: #3b714a; }
-.brand-gold { color: #835d18; }
-.brand-violet { color: #654a8e; }
-.brand-teal { color: #276a64; }
 
 .member-info {
   min-width: 0;
@@ -370,9 +386,17 @@ h2 {
 }
 
 .member-grid.is-list .member-card {
-  grid-template-columns: 3.5rem minmax(0, 1fr);
-  border-radius: 0.6rem;
+  grid-template-columns: minmax(0, 1fr);
+  border-radius: 0;
   box-shadow: none;
+}
+
+.member-grid.is-list .member-logo {
+  display: none;
+}
+
+.member-grid.is-list .member-card:nth-child(even) {
+  background: #f0eff8;
 }
 
 .site-footer {

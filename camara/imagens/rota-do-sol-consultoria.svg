@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title">
+  <title id="title">Rota do Sol Consultoria</title>
+  <rect width="320" height="180" rx="20" fill="#f2edfa"/>
+  <circle cx="238" cy="52" r="28" fill="#e5a546"/>
+  <path d="M100 180c0-55 83-61 83-116" fill="none" stroke="#654a8e" stroke-width="34"/>
+  <path d="M100 180c0-55 83-61 83-116" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="12 12"/>
+  <text x="72" y="65" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#654a8e">RS</text>
+</svg>

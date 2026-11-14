@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title">
+  <title id="title">Brisa Turismo Local</title>
+  <rect width="320" height="180" rx="20" fill="#e7f5f3"/>
+  <circle cx="250" cy="46" r="26" fill="#e5a546"/>
+  <path d="M0 108c52-27 78 27 130 0s78 27 130 0 60 0 60 0v72H0z" fill="#4d9f96"/>
+  <path d="M0 135c52-27 78 27 130 0s78 27 130 0 60 0 60 0" fill="none" stroke="#fff" stroke-width="7"/>
+  <text x="54" y="72" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#276a64">BT</text>
+</svg>

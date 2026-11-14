@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="estilos/camara-pequenas.css">
     <link rel="stylesheet" href="estilos/camara-grandes.css">
     <link rel="icon" href="../favicon.ico">
+    <script src="scripts/navegacao.js" defer></script>
     <script src="scripts/camara-diretorio.js" defer></script>
     <script src="../scripts/data.js" defer></script>
 </head>
@@ -32,12 +33,19 @@
     <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
     <header class="site-header">
-        <a class="brand" href="diretorio.html" aria-label="Câmara de Comércio de Maceió, início">
-            <img src="imagens/logo-camara-comercio.svg" alt="Câmara de Comércio de Maceió" width="240" height="49">
-        </a>
+        <div class="header-top">
+            <a class="brand" href="diretorio.html" aria-label="Câmara de Comércio de Maceió, início">
+                <img src="imagens/logo-camara-comercio.svg" alt="Câmara de Comércio de Maceió" width="240" height="49">
+            </a>
 
-        <nav class="site-navigation" aria-label="Navegação principal">
-            <a class="course-link" href="../index.html">Página do curso</a>
+            <button id="menu" class="menu-button" type="button" aria-label="Abrir menu de navegação"
+                aria-controls="navegacao-principal" aria-expanded="false">
+                <span aria-hidden="true">☰</span>
+            </button>
+        </div>
+
+        <nav id="navegacao-principal" class="site-navigation" aria-label="Navegação principal">
+            <a class="course-link" href="../index.html">Início</a>
             <a class="current-link" href="diretorio.html" aria-current="page">Diretório</a>
         </nav>
     </header>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title">
+  <title id="title">Farol Norte Digital</title>
+  <rect width="320" height="180" rx="20" fill="#eaf1ff"/>
+  <path d="M160 24l62 130H98z" fill="#c7d8fb"/>
+  <path d="M151 62h18l10 72h-38z" fill="#34538f"/>
+  <path d="M160 48l-48 16m48-16 48 16" stroke="#34538f" stroke-width="7" stroke-linecap="round"/>
+  <text x="160" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#fff">FN</text>
+</svg>

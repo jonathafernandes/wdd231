@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="180" viewBox="0 0 320 180" role="img" aria-labelledby="title">
+  <title id="title">Verde Cais Studio</title>
+  <rect width="320" height="180" rx="20" fill="#eaf5ed"/>
+  <path d="M160 145C103 116 106 62 160 36c54 26 57 80 0 109z" fill="#4f8f60"/>
+  <path d="M160 135V55m0 48-28-25m28 9 25-23" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <text x="160" y="164" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#286239">VC STUDIO</text>
+</svg>
