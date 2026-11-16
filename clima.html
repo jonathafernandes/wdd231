@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teste da API OpenWeatherMap com as condições meteorológicas atuais de Trier, Alemanha.">
+    <meta name="author" content="Jonatha Fernandes">
+    <title>Clima em Trier | OpenWeatherMap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&amp;family=Rubik:wght@300;500&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/clima.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/clima.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Teste da API OpenWeatherMap.org</h1>
+    </header>
+
+    <main>
+        <section class="local" aria-labelledby="titulo-local">
+            <img src="imagens/porta-nigra-trier.jpg"
+                alt="Porta Nigra, antigo portão romano de pedra na cidade de Trier, Alemanha" width="960" height="710">
+            <div class="local-conteudo">
+                <h2 id="titulo-local">Trier, Alemanha</h2>
+                <p>Porta Nigra, um dos monumentos romanos mais conhecidos da cidade.</p>
+                <p class="credito-imagem">Foto: <a
+                        href="https://commons.wikimedia.org/wiki/File:Trier_Porta_Nigra_BW_2.JPG">Berthold
+                        Werner</a>, Wikimedia Commons.</p>
+            </div>
+        </section>
+
+        <section class="clima" aria-labelledby="titulo-clima">
+            <h2 id="titulo-clima">Clima atual</h2>
+            <p>A temperatura atual em Trier, Alemanha, é <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        Jonatha Fernandes | OpenWeatherMap.org | CC BY-SA 4.0
+    </footer>
+</body>
+
+</html>
