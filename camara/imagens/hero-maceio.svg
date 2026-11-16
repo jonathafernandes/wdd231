@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Orla de Maceió</title>
+  <desc id="desc">Ilustração colorida da praia, com jangada, coqueiros e edifícios ao fundo.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9d4ff"/>
+      <stop offset="1" stop-color="#fff3d6"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#66c8d3"/>
+      <stop offset="1" stop-color="#277f9b"/>
+    </linearGradient>
+    <clipPath id="rounded">
+      <rect width="800" height="600" rx="42"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect width="800" height="600" fill="url(#sky)"/>
+    <circle cx="635" cy="105" r="52" fill="#e5a546" opacity=".9"/>
+    <g fill="#fff" opacity=".75">
+      <path d="M84 128c18-32 70-30 83 5 31-16 68 8 66 40H47c-4-28 13-47 37-45z"/>
+      <path d="M480 78c14-24 53-23 64 4 24-12 52 6 50 31H450c-3-21 10-36 30-35z"/>
+    </g>
+    <path d="M0 288c83-27 156 17 238-5 97-26 159 13 256-6 116-23 202 8 306-4v327H0z" fill="url(#sea)"/>
+    <path d="M0 349c120-28 208 23 332-5 119-27 254 29 468-9v32c-163 30-280-8-421 13-166 24-245-27-379 5z" fill="#b9edf0" opacity=".72"/>
+    <path d="M0 434c110-30 216-17 312 11 151 44 305 1 488 3v152H0z" fill="#f3d69b"/>
+    <path d="M0 471c127-28 234 6 353 22 144 20 292-20 447-8v115H0z" fill="#eabd75"/>
+    <g fill="#514796">
+      <path d="M80 226h72v85H80z"/><path d="M163 195h95v116h-95z"/><path d="M269 240h66v71h-66z"/>
+      <path d="M92 205h47v21H92z"/><path d="M187 166h47v29h-47z"/>
+    </g>
+    <g fill="#f7f8fc" opacity=".82">
+      <path d="M97 247h13v15H97zm26 0h13v15h-13zm66-28h15v18h-15zm29 0h15v18h-15zm0 35h15v18h-15zm-29 0h15v18h-15zm99 6h13v16h-13z"/>
+    </g>
+    <g stroke="#403879" stroke-linecap="round" stroke-width="11">
+      <path d="M672 478c4-64 3-113-23-164"/><path d="M723 473c-6-55-2-103 19-147"/>
+    </g>
+    <g fill="#35775e">
+      <path d="M649 327c-46-7-74-30-79-65 44-2 75 18 79 65z"/>
+      <path d="M653 327c5-45 30-73 66-81 4 40-18 73-66 81z"/>
+      <path d="M644 325c-31-17-48-45-44-76 35 10 52 36 44 76z"/>
+      <path d="M742 340c-39-10-61-33-63-65 39 1 62 23 63 65z"/>
+      <path d="M746 340c7-39 30-61 62-64 0 36-21 60-62 64z"/>
+    </g>
+    <g transform="translate(390 341)">
+      <path d="M0 70h151l-26 21H25z" fill="#403879"/>
+      <path d="M75 0v70" stroke="#403879" stroke-width="6"/>
+      <path d="M78 7l55 55H78z" fill="#fff3d6"/>
+      <path d="M70 19L22 62h48z" fill="#e5a546"/>
+    </g>
+    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-width="7" opacity=".8">
+      <path d="M71 393c34-10 65-8 94 4"/><path d="M255 410c42-12 83-10 119 5"/><path d="M520 389c34-9 65-7 95 5"/>
+    </g>
+  </g>
+</svg>

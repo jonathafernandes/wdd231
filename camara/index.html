@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conecte-se à comunidade empresarial de Maceió, acompanhe eventos, o clima local e empresas em destaque.">
+    <meta name="author" content="Jonatha Fernandes">
+    <meta name="theme-color" content="#f7f8fc">
+    <meta property="og:title" content="Câmara de Comércio de Maceió">
+    <meta property="og:description"
+        content="Conexões, eventos e oportunidades para fortalecer os negócios de Maceió.">
+    <meta property="og:image"
+        content="https://jonathafernandes.github.io/wdd231/camara/imagens/hero-maceio.svg">
+    <meta property="og:url" content="https://jonathafernandes.github.io/wdd231/camara/">
+    <meta property="og:type" content="website">
+    <title>Câmara de Comércio de Maceió | Início</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/camara-pequenas.css">
+    <link rel="stylesheet" href="estilos/camara-grandes.css">
+    <link rel="icon" href="../favicon.ico">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="../scripts/data.js" defer></script>
+    <script src="scripts/camara-inicio.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+        <div class="header-top">
+            <a class="brand" href="index.html" aria-label="Câmara de Comércio de Maceió, início">
+                <img src="imagens/logo-camara-comercio.svg" alt="Câmara de Comércio de Maceió" width="240"
+                    height="49">
+            </a>
+
+            <button id="menu" class="menu-button" type="button" aria-label="Abrir menu de navegação"
+                aria-controls="navegacao-principal" aria-expanded="false">
+                <span aria-hidden="true">☰</span>
+            </button>
+        </div>
+
+        <nav id="navegacao-principal" class="site-navigation" aria-label="Navegação principal">
+            <a class="current-link" href="index.html" aria-current="page">Início</a>
+            <a href="diretorio.html">Diretório</a>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" class="home-main">
+        <section class="home-hero" aria-labelledby="titulo-principal">
+            <div class="hero-content">
+                <p class="eyebrow">Câmara de Comércio de Maceió</p>
+                <h1 id="titulo-principal">Conectando negócios, fortalecendo Maceió</h1>
+                <p class="hero-copy">Criamos pontes entre empresas, profissionais e a comunidade para transformar boas
+                    ideias em oportunidades para toda a cidade.</p>
+            </div>
+
+            <div class="hero-visual">
+                <img src="imagens/hero-maceio.svg"
+                    alt="Ilustração da orla de Maceió com coqueiros, edifícios e jangada" width="800" height="600">
+                <a class="primary-action" href="associe-se.html">Associe-se à Câmara</a>
+            </div>
+        </section>
+
+        <section class="home-section" aria-labelledby="eventos-titulo">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Agenda da comunidade</p>
+                    <h2 id="eventos-titulo">Próximos eventos</h2>
+                </div>
+                <p>Encontros para compartilhar experiências, ampliar contatos e movimentar negócios locais.</p>
+            </div>
+
+            <div class="events-grid">
+                <article class="event-card">
+                    <time datetime="2026-11-21T08:30">21 nov · 8h30</time>
+                    <h3>Café &amp; Conexões</h3>
+                    <p>Uma manhã de conversas e networking no Centro de Inovação do Jaraguá.</p>
+                </article>
+
+                <article class="event-card">
+                    <time datetime="2026-11-26T18:30">26 nov · 18h30</time>
+                    <h3>Oficina de negócios digitais</h3>
+                    <p>Estratégias práticas para ampliar a presença digital de pequenas empresas.</p>
+                </article>
+
+                <article class="event-card">
+                    <time datetime="2026-12-04T14:00">4 dez · 14h</time>
+                    <h3>Rodada de negócios</h3>
+                    <p>Conexões entre fornecedores, empreendedores e organizações de diferentes setores.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-section weather-section" aria-labelledby="clima-titulo">
+            <div class="section-heading compact-heading">
+                <div>
+                    <p class="eyebrow">Maceió agora</p>
+                    <h2 id="clima-titulo">Clima e previsão</h2>
+                </div>
+            </div>
+
+            <div class="weather-panel">
+                <article class="current-weather" aria-labelledby="clima-atual-titulo">
+                    <h3 id="clima-atual-titulo">Clima atual</h3>
+                    <p id="temperatura-atual" class="current-temperature">-- °C</p>
+                    <p id="descricao-clima" class="weather-description"></p>
+                    <p id="status-clima" class="data-status" aria-live="polite"></p>
+                </article>
+
+                <div class="forecast" aria-labelledby="previsao-titulo">
+                    <h3 id="previsao-titulo">Próximos três dias</h3>
+                    <div id="previsao-clima" class="forecast-list" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-section spotlights-section" aria-labelledby="destaques-titulo">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Nossa rede</p>
+                    <h2 id="destaques-titulo">Empresas em destaque</h2>
+                </div>
+                <p>Conheça alguns dos membros que contribuem para uma economia local mais forte.</p>
+            </div>
+
+            <p id="status-destaques" class="data-status" aria-live="polite"></p>
+            <div id="destaques-membros" class="spotlights-grid"></div>
+            <noscript>
+                <p class="data-status">Ative o JavaScript para carregar as empresas em destaque.</p>
+            </noscript>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Jonatha Fernandes · Maceió, Alagoas</p>
+            <p class="footer-note">© <span id="anoAtual">2026</span> · Atualizado em <time id="ultimaModificacao"
+                    datetime="2026-11-16">16/11/2026</time>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

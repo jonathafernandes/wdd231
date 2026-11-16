@@ -36,6 +36,59 @@
     font-size: 1.05rem;
   }
 
+  .home-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.9fr);
+    align-items: center;
+    gap: 3rem;
+    min-height: 35rem;
+    padding-block: 3.5rem 4.5rem;
+  }
+
+  .section-heading {
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.7fr);
+    align-items: end;
+    gap: 2rem;
+  }
+
+  .compact-heading {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .event-card,
+  .current-weather,
+  .forecast {
+    padding: 1.5rem;
+  }
+
+  .weather-panel {
+    grid-template-columns: minmax(15rem, 0.75fr) minmax(0, 1.5fr);
+    gap: 1.25rem;
+  }
+
+  .forecast-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .forecast-item {
+    min-height: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-top: 0;
+    border-left: 1px solid var(--chamber-border);
+    padding: 0 1rem;
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
   .directory-heading {
     flex-direction: row;
     align-items: flex-end;
@@ -118,6 +171,19 @@
 }
 
 @media screen and (min-width: 70rem) {
+  .spotlights-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .spotlights-grid .member-card {
+    grid-template-columns: 1fr;
+  }
+
+  .spotlights-grid .member-logo {
+    width: 100%;
+  }
+
   .member-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
