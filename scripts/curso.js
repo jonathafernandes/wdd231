@@ -80,6 +80,13 @@ const cursos = [
 const cartoesCurso = document.querySelector("#cursos")
 const filtros = document.querySelector(".course-filters")
 const totalCreditos = document.querySelector("#total-creditos")
+const infosDoCurso = document.querySelector("#infos-do-curso");
+
+infosDoCurso.addEventListener("click", (evento) => {
+    if (evento.target === infosDoCurso) {
+        infosDoCurso.close();
+    }
+});
 
 filtros.addEventListener('click', e => {
     const botao = e.target.closest('button')
@@ -113,6 +120,10 @@ function exibeCursos(listaCursos) {
         }
 
         cartoesCurso.appendChild(cartao)
+
+        cartao.addEventListener('click', () => {
+            exibirInfosDoCurso(c);
+        });
     })
 
     const somaCreditos = listaCursos.reduce((total, curso) => {
@@ -120,6 +131,25 @@ function exibeCursos(listaCursos) {
     }, 0)
 
     totalCreditos.textContent = `Total de créditos: ${somaCreditos}`
+}
+
+function exibirInfosDoCurso(curso) {
+    infosDoCurso.innerHTML = `
+        <button id="fecharModal" type="button" aria-label="Fechar detalhes do curso">&times;</button>
+        <h2>${curso.assunto} ${curso.numero}</h2>
+        <h3>${curso.titulo}</h3>
+        <p><strong>Créditos:</strong> ${curso.creditos}</p>
+        <p><strong>Descrição:</strong> ${curso.descricao}</p>
+        <p><strong>Certificado:</strong> ${curso.certificado}</p>
+        <p><strong>Arquitetura Tecnológica:</strong> ${curso.tecnologia.join(", ")}</p>
+    `;
+    infosDoCurso.showModal();
+
+    const fecharModal = infosDoCurso.querySelector("#fecharModal");
+
+    fecharModal.addEventListener("click", () => {
+        infosDoCurso.close();
+    });
 }
 
 exibeCursos(cursos)
