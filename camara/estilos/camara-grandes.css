@@ -89,6 +89,46 @@
     gap: 1.25rem;
   }
 
+  .join-main,
+  .thanks-main {
+    padding-block: 4.5rem 5rem;
+  }
+
+  .join-intro,
+  .thanks-intro {
+    margin-bottom: 3rem;
+  }
+
+  .join-layout {
+    grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .join-form,
+  .confirmation-card {
+    padding: 2rem;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+  }
+
+  .field-full {
+    grid-column: 1 / -1;
+  }
+
+  .membership-panel {
+    align-self: start;
+  }
+
+  .confirmation-list > div {
+    grid-template-columns: minmax(10rem, 0.45fr) minmax(0, 1fr);
+    align-items: baseline;
+    gap: 1rem;
+  }
+
   .directory-heading {
     flex-direction: row;
     align-items: flex-end;

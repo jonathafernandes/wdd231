@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Solicite sua associação à Câmara de Comércio de Maceió e conheça os benefícios de cada nível.">
+    <meta name="author" content="Jonatha Fernandes">
+    <meta name="theme-color" content="#f7f8fc">
+    <meta property="og:title" content="Associe-se | Câmara de Comércio de Maceió">
+    <meta property="og:description"
+        content="Faça parte da rede empresarial da Câmara de Comércio de Maceió.">
+    <meta property="og:image"
+        content="https://jonathafernandes.github.io/wdd231/camara/imagens/logo-camara-comercio.svg">
+    <meta property="og:url" content="https://jonathafernandes.github.io/wdd231/camara/associacao.html">
+    <meta property="og:type" content="website">
+    <title>Associe-se | Câmara de Comércio de Maceió</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Rubik:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/camara-pequenas.css">
+    <link rel="stylesheet" href="estilos/camara-grandes.css">
+    <link rel="stylesheet" href="estilos/semana4-portfolio.css">
+    <link rel="icon" href="../favicon.ico">
+    <script src="scripts/navegacao.js" defer></script>
+    <script src="../scripts/data.js" defer></script>
+    <script src="scripts/camara-associacao.js" defer></script>
+</head>
+
+<body class="week-four-page association-page">
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+    <header class="site-header">
+        <div class="header-top">
+            <a class="brand" href="index.html" aria-label="Câmara de Comércio de Maceió, início">
+                <img src="imagens/logo-camara-comercio.svg" alt="Câmara de Comércio de Maceió" width="240"
+                    height="49">
+            </a>
+
+            <button id="menu" class="menu-button" type="button" aria-label="Abrir menu de navegação"
+                aria-controls="navegacao-principal" aria-expanded="false">
+                <span aria-hidden="true">☰</span>
+            </button>
+        </div>
+
+        <nav id="navegacao-principal" class="site-navigation" aria-label="Navegação principal">
+            <a href="index.html">Início</a>
+            <a href="diretorio.html">Diretório</a>
+            <a class="current-link" href="associacao.html" aria-current="page">Associe-se</a>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal" class="join-main">
+        <section class="join-intro" aria-labelledby="page-title">
+            <p class="eyebrow">Faça parte da nossa rede</p>
+            <h1 id="page-title">Associe-se à Câmara</h1>
+            <p>Conte um pouco sobre você e sua organização. Nossa equipe entrará em contato para apresentar os
+                próximos passos.</p>
+        </section>
+
+        <div class="join-layout">
+            <form class="join-form" method="get" action="agradecimento.html" aria-labelledby="form-title">
+                <div class="form-heading">
+                    <p class="eyebrow">Solicitação de associação</p>
+                    <h2 id="form-title">Seus dados</h2>
+                    <p>Os campos marcados com <span aria-hidden="true">*</span> são obrigatórios.</p>
+                </div>
+
+                <div class="form-grid">
+                    <label class="form-field">
+                        <span>Nome <span aria-hidden="true">*</span></span>
+                        <input type="text" id="nome" name="nome" title="Digite seu nome" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label class="form-field">
+                        <span>Sobrenome <span aria-hidden="true">*</span></span>
+                        <input type="text" id="sobrenome" name="sobrenome" title="Digite seu sobrenome"
+                            autocomplete="family-name" required>
+                    </label>
+
+                    <label class="form-field field-full">
+                        <span>Cargo na organização</span>
+                        <input type="text" id="cargo" name="cargo" title="Use ao menos sete letras, espaços ou hífens"
+                            autocomplete="organization-title" pattern="[A-Za-zÀ-ÖØ-öø-ÿ -]{7,}">
+                    </label>
+
+                    <label class="form-field">
+                        <span>E-mail <span aria-hidden="true">*</span></span>
+                        <input type="email" id="email" name="email" title="Digite um endereço de e-mail válido"
+                            autocomplete="email" placeholder="nome@exemplo.com" required>
+                    </label>
+
+                    <label class="form-field">
+                        <span>Celular <span aria-hidden="true">*</span></span>
+                        <input type="tel" id="celular" name="celular" title="Digite seu número de celular"
+                            autocomplete="tel" required>
+                    </label>
+
+                    <label class="form-field field-full">
+                        <span>Empresa ou organização <span aria-hidden="true">*</span></span>
+                        <input type="text" id="organizacao" name="organizacao"
+                            title="Digite o nome da empresa ou organização" autocomplete="organization" required>
+                    </label>
+
+                    <label class="form-field field-full">
+                        <span>Nível de associação <span aria-hidden="true">*</span></span>
+                        <select id="nivel" name="nivel" title="Escolha um nível de associação" required>
+                            <option value="" selected disabled>Selecione um nível</option>
+                            <option value="np">Associação NP — sem taxa</option>
+                            <option value="bronze">Associação Bronze</option>
+                            <option value="silver">Associação Silver (Prata)</option>
+                            <option value="gold">Associação Gold (Ouro)</option>
+                        </select>
+                    </label>
+
+                    <label class="form-field field-full">
+                        <span>Descrição da organização</span>
+                        <textarea id="descricao" name="descricao" title="Descreva as atividades da organização"
+                            rows="5"></textarea>
+                    </label>
+                </div>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button class="submit-button" type="submit">Enviar solicitação</button>
+            </form>
+
+            <section class="membership-panel" aria-labelledby="membership-title">
+                <div class="membership-heading">
+                    <p class="eyebrow">Escolha como participar</p>
+                    <h2 id="membership-title">Níveis de associação</h2>
+                    <p>Conheça as opções e encontre a que combina com sua organização.</p>
+                </div>
+
+                <div class="membership-cards">
+                    <article class="membership-option membership-np">
+                        <p class="membership-kicker">Sem taxa</p>
+                        <h3>Associação NP</h3>
+                        <p>Para organizações sem fins lucrativos.</p>
+                        <a href="#modal-np" data-modal="modal-np" aria-haspopup="dialog">Ver benefícios</a>
+                    </article>
+
+                    <article class="membership-option membership-bronze">
+                        <p class="membership-kicker">Para começar</p>
+                        <h3>Associação Bronze</h3>
+                        <p>Presença na rede e acesso às atividades essenciais.</p>
+                        <a href="#modal-bronze" data-modal="modal-bronze" aria-haspopup="dialog">Ver benefícios</a>
+                    </article>
+
+                    <article class="membership-option membership-silver">
+                        <p class="membership-kicker">Mais oportunidades</p>
+                        <h3>Associação Silver</h3>
+                        <p>Benefícios ampliados para empresas em crescimento.</p>
+                        <a href="#modal-silver" data-modal="modal-silver" aria-haspopup="dialog">Ver benefícios</a>
+                    </article>
+
+                    <article class="membership-option membership-gold">
+                        <p class="membership-kicker">Máxima visibilidade</p>
+                        <h3>Associação Gold</h3>
+                        <p>Destaque e participação prioritária nas iniciativas.</p>
+                        <a href="#modal-gold" data-modal="modal-gold" aria-haspopup="dialog">Ver benefícios</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <dialog id="modal-np" class="membership-dialog" aria-labelledby="modal-np-title">
+        <div class="dialog-heading">
+            <div>
+                <p class="eyebrow">Sem taxa</p>
+                <h2 id="modal-np-title">Associação NP</h2>
+            </div>
+            <button type="button" data-close-modal aria-label="Fechar informações da Associação NP">🗙</button>
+        </div>
+        <p>Uma opção criada para fortalecer organizações sem fins lucrativos que atuam na comunidade.</p>
+        <ul>
+            <li>Participação em encontros comunitários.</li>
+            <li>Perfil no diretório de membros.</li>
+            <li>Acesso a comunicações e oportunidades da Câmara.</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-dialog" aria-labelledby="modal-bronze-title">
+        <div class="dialog-heading">
+            <div>
+                <p class="eyebrow">Para começar</p>
+                <h2 id="modal-bronze-title">Associação Bronze</h2>
+            </div>
+            <button type="button" data-close-modal aria-label="Fechar informações da Associação Bronze">🗙</button>
+        </div>
+        <p>Uma base sólida para pequenos negócios que querem ampliar suas conexões locais.</p>
+        <ul>
+            <li>Todos os benefícios da Associação NP.</li>
+            <li>Descontos em eventos selecionados.</li>
+            <li>Convites para encontros de networking.</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-dialog" aria-labelledby="modal-silver-title">
+        <div class="dialog-heading">
+            <div>
+                <p class="eyebrow">Mais oportunidades</p>
+                <h2 id="modal-silver-title">Associação Silver</h2>
+            </div>
+            <button type="button" data-close-modal aria-label="Fechar informações da Associação Silver">🗙</button>
+        </div>
+        <p>Recursos adicionais para empresas que desejam crescer e compartilhar conhecimento.</p>
+        <ul>
+            <li>Todos os benefícios da Associação Bronze.</li>
+            <li>Acesso a treinamentos exclusivos.</li>
+            <li>Destaque periódico nos canais da Câmara.</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-dialog" aria-labelledby="modal-gold-title">
+        <div class="dialog-heading">
+            <div>
+                <p class="eyebrow">Máxima visibilidade</p>
+                <h2 id="modal-gold-title">Associação Gold</h2>
+            </div>
+            <button type="button" data-close-modal aria-label="Fechar informações da Associação Gold">🗙</button>
+        </div>
+        <p>O nível mais completo para organizações que desejam protagonismo na comunidade empresarial.</p>
+        <ul>
+            <li>Todos os benefícios da Associação Silver.</li>
+            <li>Posições de destaque na página inicial.</li>
+            <li>Prioridade em publicidade e eventos especiais.</li>
+        </ul>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Jonatha Fernandes · Maceió, Alagoas</p>
+            <p class="footer-note">© <span id="anoAtual">2026</span> · Atualizado em <time id="ultimaModificacao"
+                    datetime="2026-11-23">23/11/2026</time>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
