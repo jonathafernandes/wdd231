@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 800" role="img" aria-labelledby="title description">
+  <title id="title">Wireframe mobile da página inicial da Caixa Dev</title>
+  <desc id="description">Estrutura em preto e branco com cabeçalho, apresentação, busca, categorias, ferramentas em destaque e rodapé</desc>
+  <rect width="360" height="800" fill="#fff"/>
+  <g fill="none" stroke="#171717" stroke-width="2">
+    <rect x="16" y="16" width="328" height="56" rx="4"/>
+    <rect x="28" y="28" width="32" height="32" rx="3"/>
+    <path d="M72 35h86M72 48h60M304 32h24M304 40h24M304 48h24"/>
+
+    <rect x="16" y="88" width="328" height="166" rx="4"/>
+    <path d="M32 108h92M32 130h240M32 144h214M32 158h164"/>
+    <rect x="32" y="181" width="296" height="48" rx="3"/>
+    <circle cx="52" cy="205" r="8"/>
+    <path d="m58 211 7 7M76 205h220"/>
+
+    <path d="M16 282h108M16 298h210"/>
+    <rect x="16" y="318" width="101" height="42" rx="21"/>
+    <rect x="129" y="318" width="101" height="42" rx="21"/>
+    <rect x="242" y="318" width="102" height="42" rx="21"/>
+
+    <path d="M16 392h176M16 408h238"/>
+    <rect x="16" y="428" width="328" height="116" rx="4"/>
+    <rect x="30" y="442" width="60" height="60" rx="4"/>
+    <path d="M106 448h126M106 466h190M106 484h152M30 520h92M242 516h86"/>
+
+    <rect x="16" y="560" width="328" height="116" rx="4"/>
+    <rect x="30" y="574" width="60" height="60" rx="4"/>
+    <path d="M106 580h126M106 598h190M106 616h152M30 652h92M242 648h86"/>
+
+    <rect x="16" y="696" width="328" height="88" rx="4"/>
+    <path d="M32 716h136M32 734h218M32 752h162M278 716h48M278 734h48M278 752h48"/>
+  </g>
+  <g fill="#171717" font-family="Arial, sans-serif" font-size="10" font-weight="700">
+    <text x="28" y="11">CABEÇALHO</text>
+    <text x="28" y="104">APRESENTAÇÃO + BUSCA</text>
+    <text x="16" y="276">CATEGORIAS</text>
+    <text x="16" y="386">FERRAMENTAS EM DESTAQUE</text>
+    <text x="28" y="710">RODAPÉ</text>
+  </g>
+</svg>
